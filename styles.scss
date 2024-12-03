@@ -27,7 +27,6 @@ header ul {
   align-items: center;
   justify-content: space-evenly;
   list-style: none;
-  text-decoration: none;
 }
 header a {
   text-decoration: none;
@@ -201,6 +200,7 @@ header button {
   display: flex;
   height: 100vh;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   .atendimentoArticle {
@@ -298,5 +298,477 @@ footer {
     font-family: "Oswald";
     font-weight: 700;
     font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  header {
+    height: 10vh;
+  }
+  header h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  header nav {
+    width: 30%;
+  }
+  header a {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  header button {
+    border: 0.5px solid;
+    height: 3rem;
+    width: 7rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .inicialSection {
+    h1 {
+      font-weight: 400;
+      font-size: 4rem;
+    }
+    p {
+      font-weight: 200;
+      font-size: 1.3rem;
+    }
+    button {
+      margin-left: 1rem;
+      margin-top: 1rem;
+      font-weight: 400;
+      font-size: 1rem;
+      width: 10rem;
+      height: 2.4rem;
+    }
+  }
+
+  .gestaoSection {
+    height: 100vh;
+    margin: 18vh 0;
+    strong {
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+    h2 {
+      margin-top: 1rem;
+      font-size: 1.6rem;
+    }
+    p {
+      width: 350px;
+      height: 300px;
+      margin-top: 2rem;
+      font-size: 1.1rem;
+    }
+    a {
+      font-size: 1.1rem;
+    }
+    article {
+      width: 28vw;
+    }
+    img {
+      width: 35vw;
+    }
+  }
+
+  .solucoesSection {
+    strong {
+      margin-top: 5vh;
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+    section {
+      article {
+        height: 43vh;
+        width: 22vw;
+        h3 {
+          font-size: 1.1rem;
+        }
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  .contatoSection {
+    .atendimentoArticle {
+      width: 40vw;
+      h2 {
+        font-size: 1.2rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+      section {
+        flex-wrap: nowrap;
+        figure {
+          margin-left: 2rem;
+          img {
+            width: 100%;
+          }
+          figcaption {
+            font-family: "Oswald";
+            font-weight: 500;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .contatoArticle {
+      width: 30vw;
+      h2 {
+        font-size: 1.3rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+      form {
+        label {
+          margin-top: 1rem;
+          font-family: "Oswald";
+          font-weight: 300;
+          font-size: 1rem;
+        }
+        input {
+          height: 5.5vh;
+          width: 23vw;
+        }
+        textarea {
+          height: 12vh;
+          width: 23vw;
+        }
+        button {
+          margin-top: 3.75rem;
+          width: 23vw;
+          height: 6.5vh;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  footer {
+    height: 7vh;
+    p {
+      font-weight: 700;
+      font-size: 0.75rem;
+    }
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  header {
+    height: 7vh;
+  }
+  header h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  header a {
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+  header button {
+    border: 0.3px solid;
+    height: 2.3rem;
+    width: 6rem;
+    font-size: 0.9rem;
+  }
+
+  .inicialSection {
+    padding-left: 4.5rem;
+    h1 {
+      font-weight: 400;
+      font-size: 3rem;
+    }
+    p {
+      font-weight: 200;
+      font-size: 1rem;
+    }
+    button {
+      margin-left: 0;
+      margin-top: 0.5rem;
+      font-weight: 400;
+      font-size: 0.8rem;
+      width: 8rem;
+      height: 2rem;
+    }
+  }
+
+  .gestaoSection {
+    margin: 10vh 0;
+    strong {
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+    h2 {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+    p {
+      width: 100%;
+      height: 100%;
+      margin-top: 1rem;
+      font-size: 0.8rem;
+    }
+    a {
+      font-size: 0.8rem;
+    }
+    article {
+      width: 40vw;
+    }
+    img {
+      width: 35vw;
+    }
+  }
+
+  .solucoesSection {
+    strong {
+      margin-top: 0;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    h2 {
+      margin-bottom: 0;
+      font-size: 1.2rem;
+    }
+    section {
+      article {
+        height: 37vh;
+        width: 22vw;
+        h3 {
+          font-size: 0.8rem;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .contatoSection {
+    .atendimentoArticle {
+      width: 40vw;
+      h2 {
+        font-size: 1rem;
+      }
+      h3 {
+        font-size: 0.8rem;
+      }
+      section {
+        flex-wrap: nowrap;
+        figure {
+          margin-left: 1rem;
+          img {
+            width: 100%;
+          }
+          figcaption {
+            font-weight: 500;
+            font-size: 0.6rem;
+          }
+        }
+      }
+    }
+    .contatoArticle {
+      width: 40vw;
+      h2 {
+        font-size: 0.8rem;
+      }
+      h3 {
+        font-size: 0.6rem;
+      }
+      form {
+        label {
+          margin-top: 0.3rem;
+          font-weight: 300;
+          font-size: 0.8rem;
+        }
+        input {
+          height: 3vh;
+          width: 100%;
+        }
+        textarea {
+          height: 12vh;
+          width: 100%;
+        }
+        button {
+          margin-top: 2rem;
+          width: 100%;
+          height: 4vh;
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+
+  footer {
+    height: 5vh;
+    p {
+      font-weight: 600;
+      font-size: 0.6rem;
+    }
+  }
+}
+@media (max-width: 425px) {
+  header {
+    height: 5vh;
+  }
+  header h2 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  header a {
+    font-size: 0.5rem;
+    font-weight: 400;
+  }
+  header button {
+    border: 0.1px solid;
+    height: 1.5rem;
+    width: 3.5rem;
+    font-size: 0.6rem;
+  }
+
+  .inicialSection {
+    padding-left: 3.5rem;
+    h1 {
+      font-weight: 400;
+      font-size: 2rem;
+    }
+    p {
+      font-weight: 200;
+      font-size: 0.8rem;
+    }
+    button {
+      margin-left: 0;
+      margin-top: 0.5rem;
+      font-weight: 400;
+      font-size: 0.7rem;
+      width: 6rem;
+      height: 1.5rem;
+    }
+  }
+
+  .gestaoSection {
+    flex-direction: column;
+    margin: 10vh 0;
+    strong {
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+    h2 {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+    p {
+      width: 100%;
+      height: 100%;
+      margin-top: 1rem;
+      font-size: 0.8rem;
+    }
+    a {
+      font-size: 0.8rem;
+    }
+    article {
+      width: 70vw;
+    }
+    img {
+      width: 70vw;
+    }
+  }
+
+  .solucoesSection {
+    height: 130vh;
+    strong {
+      margin-top: 0;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    section {
+      flex-direction: column;
+      align-items: center;
+      article {
+        height: 35vh;
+        width: 60vw;
+        margin-bottom: 2rem;
+        h3 {
+          font-size: 0.8rem;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .contatoSection {
+    flex-direction: column;
+    .atendimentoArticle {
+      width: 65vw;
+      h2 {
+        font-size: 1rem;
+      }
+      h3 {
+        font-size: 0.8rem;
+      }
+      section {
+        flex-wrap: nowrap;
+        figure {
+          margin-left: 1rem;
+          img {
+            width: 100%;
+          }
+          figcaption {
+            font-weight: 500;
+            font-size: 0.6rem;
+          }
+        }
+      }
+    }
+    .contatoArticle {
+      width: 65vw;
+      h2 {
+        font-size: 0.8rem;
+      }
+      h3 {
+        font-size: 0.6rem;
+      }
+      form {
+        label {
+          margin-top: 0.3rem;
+          font-weight: 300;
+          font-size: 0.8rem;
+        }
+        input {
+          height: 3vh;
+          width: 100%;
+        }
+        textarea {
+          height: 12vh;
+          width: 100%;
+        }
+        button {
+          margin-top: 2rem;
+          width: 100%;
+          height: 4vh;
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+
+  footer {
+    height: 5vh;
+    p {
+      font-weight: 600;
+      font-size: 0.45rem;
+    }
   }
 }
