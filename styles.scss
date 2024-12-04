@@ -633,22 +633,23 @@ footer {
   }
 
   .inicialSection {
-    padding-left: 3.5rem;
+    align-items: center;
+    padding: 0;
     h1 {
       font-weight: 400;
-      font-size: 2rem;
+      font-size: 3.5rem;
     }
     p {
       font-weight: 200;
-      font-size: 0.8rem;
+      font-size: 1.5rem;
     }
     button {
       margin-left: 0;
       margin-top: 0.5rem;
       font-weight: 400;
-      font-size: 0.7rem;
-      width: 6rem;
-      height: 1.5rem;
+      font-size: 1rem;
+      width: 9rem;
+      height: 2.5rem;
     }
   }
 
@@ -709,19 +710,26 @@ footer {
   }
 
   .contatoSection {
-    flex-direction: column;
+    flex-direction: row;
+    height: 140vh;
+    align-items: center;
     .atendimentoArticle {
+      justify-content: center;
+      align-items: center;
       width: 65vw;
       h2 {
-        font-size: 1rem;
+        margin: 0;
+        font-size: 1.3rem;
       }
       h3 {
-        font-size: 0.8rem;
+        margin: 0;
+        font-size: 1.1rem;
       }
       section {
-        flex-wrap: nowrap;
+        width: 40vw;
+        flex-wrap: wrap;
         figure {
-          margin-left: 1rem;
+          margin-left: 0;
           img {
             width: 100%;
           }
@@ -734,13 +742,20 @@ footer {
     }
     .contatoArticle {
       width: 65vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       h2 {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
+        text-align: center;
       }
       h3 {
-        font-size: 0.6rem;
+        text-align: center;
+        font-size: 1rem;
       }
       form {
+        width: 40vw;
         label {
           margin-top: 0.3rem;
           font-weight: 300;
